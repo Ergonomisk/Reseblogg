@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
 /* Footer styles */
+body {
+    background-color: #a5e7d9;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;     
+}
+
+
+header {
+    background: #27ae60;
+    text-align: center;
+    padding: 1.5em;
+    
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+img {
+    margin: 0%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 footer {
     background: #27ae60;
     text-align: center;
@@ -11,13 +44,14 @@ footer p {
     margin: 0.5em 0;
 }
 
-footer .socials a {
-    color: #f39c12;
+a {
+    color: #FCFCFC;
     margin: 0 0.5em;
 }
 
-footer .socials a:hover {
-    color: #e67e22;
+
+a:hover {
+    color: #FCFCFC;
     text-decoration: underline;
     font-weight: bold;
 }
