@@ -1,142 +1,231 @@
+/* Importing Google Fonts for typography */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
 
+/* Resetting default styles and setting box-sizing for consistent sizing */
 * {
     margin: 0;
+    /* Removes default margin */
     padding: 0;
+    /* Removes default padding */
     box-sizing: border-box;
+    /* Includes padding and border in element's total width and height */
 }
 
+/* General body styling */
 body {
     background-color: #27ae60;
+    /* Green background */
     font-family: 'Roboto', sans-serif;
+    /* Applying 'Roboto' font */
     color: #000;
+    /* Black text color */
 }
 
+/* Header styling */
 header {
     background: whitesmoke;
+    /* Light gray background for contrast */
     text-align: center;
+    /* Center-aligns content */
     padding: 0.5em;
+    /* Adds padding for spacing */
 }
+
+/* Header title styling */
 header h1 {
     padding-bottom: 0.1em;
+    /* Adds slight spacing below the title */
 }
+
+/* Navigation bar styling */
 header nav {
     list-style: none;
+    /* Removes default bullet points */
     display: flex;
+    /* Aligns navigation links horizontally */
     justify-content: center;
+    /* Centers navigation links */
     gap: 0.6em;
-    
+    /* Adds spacing between navigation links */
 }
 
+/* Styling for the hero image */
 #hero_image {
     margin-bottom: 1em;
+    /* Adds space below the image */
     box-shadow: 0 0.5em 1em #1a4722;
+    /* Adds a green shadow for depth */
     width: 100%;
+    /* Ensures the image spans the full width of its container */
     border-radius: 0 0 3% 3%;
+    /* Rounds the bottom corners */
 }
 
+/* Article container styling */
 article {
     padding: 1em;
+    /* Adds inner spacing */
     background: whitesmoke;
+    /* Light gray background for contrast */
     box-shadow: 0.5rem 0.5rem 1rem #1a4722;
+    /* Adds green shadow for depth */
     border-radius: 1em;
+    /* Rounds the corners */
 }
 
+/* Styling for article titles */
 article h2 {
     margin-bottom: 0.5em;
+    /* Adds spacing below the title */
 }
 
+/* First grid container styling */
 .grid-container-1 {
     display: grid;
+    /* Enables grid layout */
     gap: 1em;
+    /* Adds spacing between grid items */
     padding: 1em;
+    /* Adds padding inside the grid container */
     grid-template-areas: "SP SW CH";
+    /* Defines layout for specific areas */
 }
 
+/* Assigning grid areas for individual sections in the first grid */
 #Spain {
     grid-area: SP;
+    /* Assigns Spain section to the SP area */
 }
 
 #Sweden {
     grid-area: SW;
+    /* Assigns Sweden section to the SW area */
 }
 
 #China {
     grid-area: CH;
+    /* Assigns China section to the CH area */
 }
 
-.grid-container-1 article h3, 
-.grid-container-2 article h3, 
+/* Styling for headings in all grid containers */
+.grid-container-1 article h3,
+.grid-container-2 article h3,
 .grid-container-3 article h3 {
     margin-bottom: 0.5em;
+    /* Adds spacing below headings */
     color: #000;
+    /* Sets text color to black */
 }
 
-.grid-container-1 article p, 
-.grid-container-2 article p, 
+/* Styling for paragraphs in all grid containers */
+.grid-container-1 article p,
+.grid-container-2 article p,
 .grid-container-3 article p {
     margin-bottom: 0.5em;
+    /* Adds spacing below paragraphs */
     color: #000;
+    /* Sets text color to black */
 }
 
-.grid-container-2, .grid-container-3 {
+/* General grid container styling for additional sections */
+.grid-container-2,
+.grid-container-3 {
     display: grid;
+    /* Enables grid layout */
     gap: 1.5em;
+    /* Adds larger spacing between items */
     padding: 1em;
+    /* Adds padding inside the grid container */
 }
 
+/* Grid container 2: Two-column layout */
 .grid-container-2 {
     grid-template-columns: 1fr 1fr;
+    /* Defines two equal columns */
 }
 
+/* Grid container 3: Three-column layout */
 .grid-container-3 {
     grid-template-columns: 1fr 1fr 1fr;
+    /* Defines three equal columns */
 }
 
-.grid-container-2 .bilder, 
+/* Styling for images in grid containers 2 and 3 */
+.grid-container-2 .bilder,
 .grid-container-3 .bilder {
     width: 100%;
+    /* Makes images responsive */
     border-radius: 1em;
-
+    /* Rounds the corners */
 }
 
+/* Section for "About Us" */
 #omoss {
     text-align: center;
+    /* Centers content */
 }
 
+/* Styling for destination and team sections */
 #destinationer,
 #vartteam {
     margin: 1em auto;
+    /* Adds vertical spacing and centers the section */
     padding: 1em;
+    /* Adds inner spacing */
     max-width: 50%;
+    /* Limits the section width */
     background: #f5f5f5;
+    /* Light gray background */
     box-shadow: 0.5rem 0.5rem 1rem #1a4722;
+    /* Adds green shadow for depth */
     border-radius: 1em;
+    /* Rounds the corners */
     text-align: center;
+    /* Centers text */
 }
+
+/* Footer styling */
 footer {
     margin-top: 1em;
+    /* Adds spacing above the footer */
     background: whitesmoke;
+    /* Light gray background */
     text-align: center;
+    /* Centers footer content */
     padding: 1.5em;
+    /* Adds inner spacing */
     border-radius: 1em 1em 0 0;
+    /* Rounds the top corners */
 }
 
+/* Footer text spacing */
 footer p {
     margin: 0.5em;
+    /* Adds vertical spacing between paragraphs */
 }
+
+/* Footer link spacing */
 footer a {
     margin: 0.2em;
+    /* Adds small spacing between links */
 }
+
+/* General link styling */
 a {
     background: #27ae60;
+    /* Green background for links */
     color: black;
+    /* Black text color */
     padding: 0.2em 0.5em;
+    /* Adds padding around text */
     border-radius: 0.5em;
+    /* Rounds the corners */
     text-decoration: none;
+    /* Removes underline */
 }
 
+/* Link hover effect */
 a:hover {
     font-weight: bold;
+    /* Makes text bold on hover */
 }
-
